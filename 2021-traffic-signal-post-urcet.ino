@@ -64,7 +64,7 @@ void upload_data(String data)
      if (client.connect("madblocks.tech",80))
      {
         Serial.println("Uploading Data");
-        request_string = "https://madblocks.tech/projects/traffic-urcet/device_push.php?status=";
+        request_string = "https://madblocks.tech/XYZWABCD/traffic-urcet/device_push.php?status=";
         request_string += data;
         http.begin(request_string);
         http.GET();
